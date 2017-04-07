@@ -28,6 +28,7 @@ devtools::load_all(quiet = TRUE)
 chopped_meat <- chop("raw_meat.csv")
 chopped_meat
 fry(chopped_meat, with = I("vegetables"))
+peel(buy(I("carrots")))
 ```
 
 ## Installation

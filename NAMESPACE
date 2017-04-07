@@ -2,8 +2,10 @@
 
 S3method(format,food)
 S3method(print,food)
+export(buy)
 export(chop)
 export(combine)
 export(cook)
 export(fry)
 export(peel)
+export(supermarket)
