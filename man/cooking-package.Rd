@@ -42,7 +42,6 @@ fry(chopped_meat, with = I("vegetables"))
 Useful links:
 \itemize{
   \item \url{https://github.com/krlmlr/cooking}
-  \item \url{http://krlmlr.github.io/cooking}
   \item Report bugs at \url{https://github.com/krlmlr/cooking/issues}
 }
 

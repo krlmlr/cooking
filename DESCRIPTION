@@ -8,6 +8,6 @@ Encoding: UTF-8
 LazyData: true
 Date: 2017-04-07
 BugReports: https://github.com/krlmlr/cooking/issues
-URL: https://github.com/krlmlr/cooking, http://krlmlr.github.io/cooking
+URL: https://github.com/krlmlr/cooking
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 6.0.1
