@@ -1,6 +1,6 @@
 Package: cooking
 Title: Cooking with R
-Version: 0.0-2
+Version: 0.0-3
 Authors@R: person("Kirill", "Müller", role = c("aut", "cre"), email = "krlmlr+r@mailbox.org")
 Description: Chopping, peeling, frying, and cooking various ingredients,
     and combining them to a delicious ragout.
