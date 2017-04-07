@@ -2,6 +2,8 @@
 cooking
 =======
 
+[![Travis-CI Build Status](https://travis-ci.org/krlmlr/cooking.svg?branch=master)](https://travis-ci.org/krlmlr/cooking) [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/cooking)](https://cran.r-project.org/package=cooking)
+
 Chopping, peeling, frying, and cooking various ingredients, and combining them to a delicious ragout. Also includes buying them from a local supermarket.
 
 Example
