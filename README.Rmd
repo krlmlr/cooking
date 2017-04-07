@@ -1,0 +1,38 @@
+---
+output:
+  md_document:
+    variant: markdown_github
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+# cooking
+
+Chopping, peeling, frying, and cooking various ingredients.
+
+## Example
+
+```{r echo=FALSE}
+devtools::load_all(quiet = TRUE)
+```
+
+```{r example}
+chopped_meat <- chop("raw_meat.csv")
+chopped_meat
+fry(chopped_meat, with = I("vegetables"))
+```
+
+## Installation
+
+```r
+# install.packages("remotes")
+remotes::install_github("krlmlr/cooking")
+```
