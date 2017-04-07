@@ -1,14 +1,14 @@
 #' @rdname cooking-package
 #' @export
-#' @param where Where to buy the food, default: `supermarket()`
+#' @param from Where to buy the food, default: `supermarket()`
 #' @examples
 #' peel(buy(I("carrots")))
-buy <- function(what, where = supermarket()) {
+buy <- function(what, from = supermarket()) {
   structure(
     paste("raw", what),
     class = "food",
     provenance = ", bought at",
-    input = where
+    input = from
   )
 }
 

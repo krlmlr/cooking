@@ -33,7 +33,7 @@ chopped_meat <- chop("raw_meat.csv")
 chopped_meat
 fry(chopped_meat, with = I("vegetables"))
 peel(buy(I("carrots")))
-buy(I("potatoes"), I("local market"))
+buy(I("potatoes"), from = I("local market"))
 ```
 
 ## Installation
