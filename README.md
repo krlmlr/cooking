@@ -6,6 +6,8 @@ cooking
 
 Chopping, peeling, frying, and cooking various ingredients, and combining them to a delicious ragout. Also includes buying them from a local supermarket.
 
+![dependency graph](assets/dep_graph.png)
+
 Example
 -------
 
