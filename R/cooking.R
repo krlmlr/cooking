@@ -1,34 +1,44 @@
-#' Cooking actions
-#'
-#' Peel, chop, fry, or cook ingredients, or combine prepared food.
-#'
 #' @param what Main ingredient
 #' @param ... Other ingredients
+#' @return An object of class `food` that prints its provenance in a nice
+#'   fashion.
 #'
+#' @rdname cooking-package
 #' @export
-#' @name actions
-#' @examples
-#' chopped_meat <- chop("raw_meat.csv")
-#' chopped_meat
-#' fry(chopped_meat, with = I("vegetables"))
-combine <- function(...) {
-  structure("ragout", class = "food", input = list(...))
+peel <- function(what, ...) {
+  what <- get_what(what)
+  main <- get_main(what)
+  structure(paste("peeled", main), class = "food", input = list(what, ...))
 }
 
+#' @rdname cooking-package
 #' @export
-#' @rdname actions
+chop <- function(what, ...) {
+  what <- get_what(what)
+  main <- get_main(what)
+  structure(paste("chopped", main), class = "food", input = list(what, ...))
+}
+
+#' @rdname cooking-package
+#' @export
 fry <- function(what, ...) {
   what <- get_what(what)
   main <- get_main(what)
   structure(paste("fried", main), class = "food", input = list(what, ...))
 }
 
-#' @rdname actions
+#' @rdname cooking-package
 #' @export
-chop <- function(what, ...) {
+cook <- function(what, ...) {
   what <- get_what(what)
   main <- get_main(what)
-  structure(paste("chopped", main), class = "food", input = list(what, ...))
+  structure(paste("cooked", main), class = "food", input = list(what, ...))
+}
+
+#' @rdname cooking-package
+#' @export
+combine <- function(...) {
+  structure("ragout", class = "food", input = list(...))
 }
 
 #' @export
