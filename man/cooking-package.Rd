@@ -13,7 +13,7 @@
 \alias{cooking-package}
 \title{cooking: Cooking with R}
 \usage{
-buy(what, where = supermarket())
+buy(what, from = supermarket())
 
 supermarket()
 
@@ -29,6 +29,8 @@ combine(...)
 }
 \arguments{
 \item{what}{Main ingredient}
+
+\item{from}{Where to buy the food, default: \code{supermarket()}}
 
 \item{...}{Other ingredients}
 }

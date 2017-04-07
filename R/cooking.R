@@ -42,12 +42,12 @@ combine <- function(...) {
 }
 
 #' @export
-format.food <- function(x) {
+format.food <- function(x, ...) {
   c(provenance(x), indent(unlist(lapply(attr(x, "input"), format))))
 }
 
 #' @export
-print.food <- function(x) {
+print.food <- function(x, ...) {
   cat(paste(format(x), collapse = "\n"))
   invisible(x)
 }
