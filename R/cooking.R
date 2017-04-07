@@ -43,13 +43,19 @@ combine <- function(...) {
 
 #' @export
 format.food <- function(x) {
-  c(paste0(x, ", made of"), indent(unlist(lapply(attr(x, "input"), format))))
+  c(provenance(x), indent(unlist(lapply(attr(x, "input"), format))))
 }
 
 #' @export
 print.food <- function(x) {
   cat(paste(format(x), collapse = "\n"))
   invisible(x)
+}
+
+provenance <- function(x) {
+  made_of <- attr(x, "provenance")
+  if (is.null(made_of)) made_of <- ", made of"
+  paste(x, made_of, sep = "")
 }
 
 indent <- function(x) paste0("  ", x)

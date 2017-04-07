@@ -17,6 +17,10 @@ fry(chopped_meat, with = I("vegetables"))
 #>   chopped meat, made of
 #>     raw meat
 #>   vegetables
+peel(buy(I("carrots")))
+#> peeled carrots, made of
+#>   raw carrots, bought at
+#>     supermarket
 ```
 
 Installation
