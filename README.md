@@ -21,6 +21,9 @@ peel(buy(I("carrots")))
 #> peeled carrots, made of
 #>   raw carrots, bought at
 #>     supermarket
+buy(I("potatoes"), I("local market"))
+#> raw potatoes, bought at
+#>   local market
 ```
 
 Installation
