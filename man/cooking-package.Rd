@@ -30,6 +30,8 @@ combine(...)
 \arguments{
 \item{what}{Main ingredient}
 
+\item{where}{Where to buy the food, default: \code{supermarket()}}
+
 \item{...}{Other ingredients}
 }
 \value{

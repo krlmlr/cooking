@@ -1,5 +1,6 @@
 #' @rdname cooking-package
 #' @export
+#' @param where Where to buy the food, default: `supermarket()`
 #' @examples
 #' peel(buy(I("carrots")))
 buy <- function(what, where = supermarket()) {
