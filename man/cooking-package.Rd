@@ -9,7 +9,7 @@
 Chopping, peeling, frying, and cooking various ingredients.
 }
 \seealso{
-\code{\link[=chop]{chop()}}, \code{\link[=fry]{fry()}}, \code{\link[=combine]{combine()}}
+\code{\link[=chop]{chop()}} and the other actions described there
 }
 \author{
 \strong{Maintainer}: Kirill Müller \email{krlmlr+r@mailbox.org}

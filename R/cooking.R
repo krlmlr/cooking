@@ -1,15 +1,29 @@
+#' Cooking actions
+#'
+#' Peel, chop, fry, or cook ingredients, or combine prepared food.
+#'
+#' @param what Main ingredient
+#' @param ... Other ingredients
+#'
 #' @export
+#' @name actions
+#' @examples
+#' chopped_meat <- chop("raw_meat.csv")
+#' chopped_meat
+#' fry(chopped_meat, with = I("vegetables"))
 combine <- function(...) {
   structure("ragout", class = "food", input = list(...))
 }
 
 #' @export
+#' @rdname actions
 fry <- function(what, ...) {
   what <- get_what(what)
   main <- get_main(what)
   structure(paste("fried", main), class = "food", input = list(what, ...))
 }
 
+#' @rdname actions
 #' @export
 chop <- function(what, ...) {
   what <- get_what(what)
