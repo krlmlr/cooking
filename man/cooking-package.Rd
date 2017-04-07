@@ -42,7 +42,7 @@ and combining them to a delicious ragout.
 Also includes buying them from a local supermarket.
 }
 \examples{
-buy(I("meat"))
+peel(buy(I("carrots")))
 chopped_meat <- chop("raw_meat.csv")
 chopped_meat
 fry(chopped_meat, with = I("vegetables"))
