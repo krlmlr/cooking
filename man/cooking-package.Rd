@@ -28,7 +28,8 @@ cook(what, ...)
 combine(...)
 }
 \arguments{
-\item{what}{Main ingredient}
+\item{what}{Main ingredient. If it is the name of an existing file, the first
+line of the file is read}
 
 \item{from}{Where to buy the food, default: \code{supermarket()}}
 

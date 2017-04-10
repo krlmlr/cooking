@@ -1,6 +1,6 @@
 Package: cooking
 Title: Cooking with R
-Version: 0.0-3
+Version: 0.0-4
 Authors@R: person("Kirill", "Müller", role = c("aut", "cre"), email = "krlmlr+r@mailbox.org")
 Description: Chopping, peeling, frying, and cooking various ingredients,
     and combining them to a delicious ragout.
@@ -8,7 +8,7 @@ Description: Chopping, peeling, frying, and cooking various ingredients,
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
-Date: 2017-04-07
+Date: 2017-04-10
 BugReports: https://github.com/krlmlr/cooking/issues
 URL: https://github.com/krlmlr/cooking
 Roxygen: list(markdown = TRUE)

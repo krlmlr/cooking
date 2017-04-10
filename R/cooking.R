@@ -1,4 +1,5 @@
-#' @param what Main ingredient
+#' @param what Main ingredient. If it is the name of an existing file, the first
+#'   line of the file is read
 #' @param ... Other ingredients
 #' @return An object of class `food` that prints its provenance in a nice
 #'   fashion.
@@ -61,7 +62,10 @@ provenance <- function(x) {
 indent <- function(x) paste0("  ", x)
 
 get_what <- function(x) {
-  extracted <- gsub("^\"?([^.]*)(?:[.].*)?\"?$", "\\1", x)
+  if (file.exists(x))
+    extracted <- readLines(x, n = 1)
+  else
+    extracted <- gsub("^\"?([^.]*)(?:[.].*)?\"?$", "\\1", x)
   gsub("_", " ", extracted)
 }
 
