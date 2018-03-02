@@ -112,7 +112,7 @@ Also includes buying them from a local supermarket.</p>
 
 <span class='fu'>cook</span>(<span class='no'>what</span>, <span class='no'>...</span>)
 
-<span class='fu'>combine</span>(<span class='no'>...</span>)</pre>
+<span class='fu'>combine</span>(<span class='no'>...</span>, <span class='kw'>name</span> <span class='kw'>=</span> <span class='st'>"ragout"</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
     <table class="ref-arguments">
@@ -129,6 +129,10 @@ line of the file is read</p></td>
     <tr>
       <th>...</th>
       <td><p>Other ingredients</p></td>
+    </tr>
+    <tr>
+      <th>name</th>
+      <td><p>The name of the resulting food</p></td>
     </tr>
     </table>
     
@@ -153,7 +157,9 @@ fashion.</p>
 #&gt;   raw meat</div><div class='input'><span class='fu'>fry</span>(<span class='no'>chopped_meat</span>, <span class='kw'>with</span> <span class='kw'>=</span> <span class='st'>"vegetables"</span>)</div><div class='output co'>#&gt; fried meat, made of
 #&gt;   chopped meat, made of
 #&gt;     raw meat
-#&gt;   vegetables</div></pre>
+#&gt;   vegetables</div><div class='input'><span class='fu'>combine</span>(<span class='st'>"diced cucumber"</span>, <span class='st'>"cut tomatoes"</span>, <span class='kw'>name</span> <span class='kw'>=</span> <span class='st'>"salad"</span>)</div><div class='output co'>#&gt; salad, made of
+#&gt;   diced cucumber
+#&gt;   cut tomatoes</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>

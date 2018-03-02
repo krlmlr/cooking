@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Function reference • cooking</title>
+<title>Create new food — new_food • cooking</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -27,7 +27,10 @@
 <script src="../pkgdown.js"></script>
   
   
-<meta property="og:title" content="Function reference" />
+<meta property="og:title" content="Create new food — new_food" />
+
+<meta property="og:description" content="Constructor for objects of class food." />
+<meta name="twitter:card" content="summary" />
 <!-- mathjax -->
 <script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
@@ -40,7 +43,7 @@
   </head>
 
   <body>
-    <div class="container template-reference-index">
+    <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -84,58 +87,52 @@
       </header>
 
       <div class="row">
-  <div class="col-md-9">
+  <div class="col-md-9 contents">
     <div class="page-header">
-      <h1>
-        Reference
-        <small>version&nbsp;0.0-5</small>
-      </h1>
+    <h1>Create new food</h1>
     </div>
 
-    <div class="contents">
-      <table class="ref-index">
+    
+    <p>Constructor for objects of class <code>food</code>.</p>
+    
 
-      <colgroup>
-        <col class="alias" />
-        <col class="title" />
-      </colgroup>
+    <pre class="usage"><span class='fu'>new_food</span>(<span class='no'>what</span>, <span class='no'>input</span>, <span class='kw'>provenance</span> <span class='kw'>=</span> <span class='kw'>NULL</span>)
 
-      <tbody>
-        <tr>
-          <th colspan="2">
-            <h2 id="section-all-functions" class="hasAnchor"><a href="#section-all-functions" class="anchor"></a>All functions</h2>
-            <p class="section-desc"></p>
-          </th>
-        </tr>
-        <tr>
-          <!--  -->
-          <td>
-            <p><code><a href="cooking-package.html">buy</a></code> <code><a href="cooking-package.html">supermarket</a></code> <code><a href="cooking-package.html">peel</a></code> <code><a href="cooking-package.html">chop</a></code> <code><a href="cooking-package.html">fry</a></code> <code><a href="cooking-package.html">cook</a></code> <code><a href="cooking-package.html">combine</a></code> </p>
-          </td>
-          <td><p>cooking: Cooking with R</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="make_cooking.html">make_cooking</a></code> </p>
-          </td>
-          <td><p>Manipulate food</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="new_food.html">new_food</a></code> <code><a href="new_food.html">new_food_source</a></code> </p>
-          </td>
-          <td><p>Create new food</p></td>
-        </tr>
-      </tbody>
-      </table>
-    </div>
+<span class='fu'>new_food_source</span>(<span class='no'>what</span>)</pre>
+    
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>what</th>
+      <td><p>Name of the food or food source</p></td>
+    </tr>
+    <tr>
+      <th>input</th>
+      <td><p>Ingredients that went into creating this food</p></td>
+    </tr>
+    <tr>
+      <th>provenance</th>
+      <td><p>Conjunction to use with the ingredients, defaults to
+<code>"made of"</code></p></td>
+    </tr>
+    </table>
+    
+
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><div class='input'><span class='fu'>new_food</span>(<span class='st'>"chopped meat"</span>, <span class='st'>"raw meat"</span>)</div><div class='output co'>#&gt; chopped meat, made of
+#&gt;   raw meat</div><div class='input'><span class='fu'>new_food</span>(<span class='st'>"carrot pieces"</span>, <span class='st'>"peeled carrots"</span>, <span class='st'>"cut from"</span>)</div><div class='output co'>#&gt; carrot pieces, cut from
+#&gt;   peeled carrots</div><div class='input'><span class='fu'>new_food_source</span>(<span class='st'>"the butcher's"</span>)</div><div class='output co'>#&gt; the butcher's, 
+#&gt;   </div></pre>
   </div>
-
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
-      <li><a href="#section-all-functions">All functions</a></li>
+      <li><a href="#arguments">Arguments</a></li>
+            
+      <li><a href="#examples">Examples</a></li>
     </ul>
+
   </div>
 </div>
 
