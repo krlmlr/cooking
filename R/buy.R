@@ -4,16 +4,15 @@
 #' @examples
 #' peel(buy("carrots"))
 buy <- function(what, from = supermarket()) {
-  structure(
+  new_food(
     paste("raw", what),
-    class = "food",
-    provenance = ", bought at",
-    input = from
+    input = from,
+    provenance = "bought at"
   )
 }
 
 #' @rdname cooking-package
 #' @export
 supermarket <- function() {
-  structure("supermarket", class = "food", provenance = "")
+  new_food_source("supermarket")
 }

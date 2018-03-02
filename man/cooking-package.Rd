@@ -25,7 +25,7 @@ fry(what, ...)
 
 cook(what, ...)
 
-combine(...)
+combine(..., name = "ragout")
 }
 \arguments{
 \item{what}{Main ingredient. If it is the name of an existing file, the first
@@ -34,6 +34,8 @@ line of the file is read}
 \item{from}{Where to buy the food, default: \code{supermarket()}}
 
 \item{...}{Other ingredients}
+
+\item{name}{The name of the resulting food}
 }
 \value{
 An object of class \code{food} that prints its provenance in a nice
@@ -49,6 +51,7 @@ peel(buy("carrots"))
 chopped_meat <- chop("raw_meat.csv")
 chopped_meat
 fry(chopped_meat, with = "vegetables")
+combine("diced cucumber", "cut tomatoes", name = "salad")
 }
 \seealso{
 Useful links:

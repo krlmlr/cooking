@@ -15,3 +15,8 @@ Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 6.0.1.9000
+Collate: 
+    'buy.R'
+    'food.R'
+    'cooking.R'
+    'package.R'

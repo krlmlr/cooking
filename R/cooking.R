@@ -6,40 +6,26 @@
 #'
 #' @rdname cooking-package
 #' @export
-peel <- function(what, ...) {
-  what <- get_what(what)
-  main <- get_main(what)
-  structure(paste("peeled", main), class = "food", input = list(what, ...))
-}
+#' @include food.R
+peel <- make_cooking("peeled")
 
 #' @rdname cooking-package
 #' @export
-chop <- function(what, ...) {
-  what <- get_what(what)
-  main <- get_main(what)
-  structure(paste("chopped", main), class = "food", input = list(what, ...))
-}
+chop <- make_cooking("chopped")
 
 #' @rdname cooking-package
 #' @export
-fry <- function(what, ...) {
-  what <- get_what(what)
-  main <- get_main(what)
-  structure(paste("fried", main), class = "food", input = list(what, ...))
-}
+fry <- make_cooking("fried")
 
 #' @rdname cooking-package
 #' @export
-cook <- function(what, ...) {
-  what <- get_what(what)
-  main <- get_main(what)
-  structure(paste("cooked", main), class = "food", input = list(what, ...))
-}
+cook <- make_cooking("cooked")
 
 #' @rdname cooking-package
+#' @param name The name of the resulting food
 #' @export
-combine <- function(...) {
-  structure("ragout", class = "food", input = list(...))
+combine <- function(..., name = "ragout") {
+  new_food(name, list(...))
 }
 
 #' @export
@@ -55,8 +41,8 @@ print.food <- function(x, ...) {
 
 provenance <- function(x) {
   made_of <- attr(x, "provenance")
-  if (is.null(made_of)) made_of <- ", made of"
-  paste(x, crayon::italic(made_of), sep = "")
+  if (is.null(made_of)) made_of <- "made of"
+  paste(x, ", ", crayon::italic(made_of), sep = "")
 }
 
 indent <- function(x) paste0("  ", x)
