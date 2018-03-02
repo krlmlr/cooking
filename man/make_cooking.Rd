@@ -4,7 +4,7 @@
 \alias{make_cooking}
 \title{Manipulate food}
 \usage{
-make_cooking(processed, envir = parent.frame())
+make_cooking(processed, envir = getNamespace("cooking"))
 }
 \arguments{
 \item{processed}{A description of the result, an adjective}

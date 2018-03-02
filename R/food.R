@@ -42,7 +42,7 @@ new_food_object <- function(what, input, provenance) {
 #' @examples
 #' marinate <- make_cooking("marinated")
 #' marinate("chopped meat")
-make_cooking <- function(processed, envir = parent.frame()) {
+make_cooking <- function(processed, envir = getNamespace("cooking")) {
   fun <- eval(bquote(function(what, ...) {
     what <- get_what(what)
     main <- get_main(what)
