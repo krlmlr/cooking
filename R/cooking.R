@@ -49,7 +49,7 @@ format.food <- function(x, ...) {
 
 #' @export
 print.food <- function(x, ...) {
-  cat(paste(format(x), collapse = "\n"))
+  cat(paste(format(x), collapse = "\n"), "\n", sep = "")
   invisible(x)
 }
 
