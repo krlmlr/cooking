@@ -1,7 +1,7 @@
 Package: cooking
 Title: Cooking with R
-Version: 0.0-4
-Date: 2017-04-10
+Version: 0.0-5
+Date: 2018-03-02
 Authors@R: person("Kirill", "Müller", role = c("aut", "cre"), email = "krlmlr+r@mailbox.org")
 Description: Chopping, peeling, frying, and cooking various ingredients,
     and combining them to a delicious ragout.
@@ -14,4 +14,4 @@ Imports:
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 6.0.1
+RoxygenNote: 6.0.1.9000
