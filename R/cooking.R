@@ -56,7 +56,7 @@ print.food <- function(x, ...) {
 provenance <- function(x) {
   made_of <- attr(x, "provenance")
   if (is.null(made_of)) made_of <- ", made of"
-  paste(x, made_of, sep = "")
+  paste(x, crayon::italic(made_of), sep = "")
 }
 
 indent <- function(x) paste0("  ", x)
