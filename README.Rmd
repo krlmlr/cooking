@@ -31,9 +31,9 @@ devtools::load_all(quiet = TRUE)
 ```{r example}
 chopped_meat <- chop("raw_meat.csv")
 chopped_meat
-fry(chopped_meat, with = I("vegetables"))
-peel(buy(I("carrots")))
-buy(I("potatoes"), from = I("local market"))
+fry(chopped_meat, with = "vegetables")
+peel(buy("carrots"))
+buy("potatoes", from = "local market")
 ```
 
 ## Installation

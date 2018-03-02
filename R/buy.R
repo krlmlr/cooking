@@ -2,7 +2,7 @@
 #' @export
 #' @param from Where to buy the food, default: `supermarket()`
 #' @examples
-#' peel(buy(I("carrots")))
+#' peel(buy("carrots"))
 buy <- function(what, from = supermarket()) {
   structure(
     paste("raw", what),
