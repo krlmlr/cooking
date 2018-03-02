@@ -4,10 +4,13 @@
 \alias{make_cooking}
 \title{Manipulate food}
 \usage{
-make_cooking(processed, envir = getNamespace("cooking"))
+make_cooking(processed, provenance = NULL, envir = getNamespace("cooking"))
 }
 \arguments{
 \item{processed}{A description of the result, an adjective}
+
+\item{provenance}{Conjunction to use with the ingredients, defaults to
+\code{"made of"}}
 
 \item{envir}{The parent environment of the function}
 }

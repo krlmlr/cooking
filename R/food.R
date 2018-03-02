@@ -35,6 +35,7 @@ new_food_object <- function(what, input, provenance) {
 #' Manipulate food
 #'
 #' This function creates new functions that change food in various ways.
+#' @inheritParams new_food
 #' @param processed A description of the result, an adjective
 #' @param envir The parent environment of the function
 #' @return A function with arguments `what` and `...`, similar to [fry()]
@@ -42,11 +43,15 @@ new_food_object <- function(what, input, provenance) {
 #' @examples
 #' marinate <- make_cooking("marinated")
 #' marinate("chopped meat")
-make_cooking <- function(processed, envir = getNamespace("cooking")) {
+make_cooking <- function(processed, provenance = NULL, envir = getNamespace("cooking")) {
   fun <- eval(bquote(function(what, ...) {
     what <- get_what(what)
     main <- get_main(what)
-    structure(paste(.(processed), main), class = "food", input = list(what, ...))
+    new_food(
+      paste(.(processed), main),
+      input = list(what, ...),
+      provenance = .(provenance)
+    )
   }))
 
   environment(fun) <- envir
