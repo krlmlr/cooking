@@ -45,10 +45,10 @@ and combining them to a delicious ragout.
 Also includes buying them from a local supermarket.
 }
 \examples{
-peel(buy(I("carrots")))
+peel(buy("carrots"))
 chopped_meat <- chop("raw_meat.csv")
 chopped_meat
-fry(chopped_meat, with = I("vegetables"))
+fry(chopped_meat, with = "vegetables")
 }
 \seealso{
 Useful links:
