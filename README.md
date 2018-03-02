@@ -17,16 +17,16 @@ chopped_meat <- chop("raw_meat.csv")
 chopped_meat
 #> chopped meat, made of
 #>   raw meat
-fry(chopped_meat, with = I("vegetables"))
+fry(chopped_meat, with = "vegetables")
 #> fried meat, made of
 #>   chopped meat, made of
 #>     raw meat
 #>   vegetables
-peel(buy(I("carrots")))
+peel(buy("carrots"))
 #> peeled carrots, made of
 #>   raw carrots, bought at
 #>     supermarket
-buy(I("potatoes"), from = I("local market"))
+buy("potatoes", from = "local market")
 #> raw potatoes, bought at
 #>   local market
 ```
