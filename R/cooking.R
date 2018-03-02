@@ -49,14 +49,14 @@ format.food <- function(x, ...) {
 
 #' @export
 print.food <- function(x, ...) {
-  cat(paste(format(x), collapse = "\n"))
+  cat(paste(format(x), collapse = "\n"), "\n", sep = "")
   invisible(x)
 }
 
 provenance <- function(x) {
   made_of <- attr(x, "provenance")
   if (is.null(made_of)) made_of <- ", made of"
-  paste(x, made_of, sep = "")
+  paste(x, crayon::italic(made_of), sep = "")
 }
 
 indent <- function(x) paste0("  ", x)
